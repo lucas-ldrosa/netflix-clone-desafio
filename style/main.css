@@ -1,0 +1,131 @@
+:root{
+    --vermelho: #E50914;
+    --preta: #141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*elementos base*/
+
+body{
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    background-color: #141414;
+    background-image: url(/img/suits-bg.jpg);
+}
+
+.background-image{
+    height: 100%;
+    width: 100%;
+}
+
+header .container{
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header .logo{
+    height: 53px;
+}
+
+header nav{
+    margin-left: 25px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #e5e5e5;
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+header nav a:hover{
+    color: rgba(255,255,255,0.75);
+}
+
+/*filme principal*/
+
+.container{
+    margin-left: 3%;
+}
+
+.filme-principal{    
+    height: 800px;
+    background-size: cover;
+    
+    display: flex;
+    flex-direction: center;
+    align-items: flex-start;
+}
+
+.filme-principal .container{
+    width: 35%;
+}
+
+.filme-principal .descricao{
+    font-size: 1.2vw;
+    font-weight: 400px;
+    line-height: normal;
+    width: 100%;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgb(0 0 0 / 45%);
+    margin-bottom: 1%;
+    margin-top: 2%;
+}
+
+.titulo{
+    margin-top: 45%;
+    width: 100%;
+    transform-origin: bottom left;
+}
+
+.botoes{
+    margin-top: 3%;
+}
+
+.botao{
+    
+    padding: 15px 40px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+
+    border-radius: 5%;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+#play{
+    background-color: rgba(239, 239, 239,.80);
+    border: none;
+    color: black;
+    margin-right: 5px;
+}
+
+#more-info{
+    background-color: rgba(59, 59, 59,.80);
+    border: none;
+    color: white;
+}
+
+#play:hover, #more-info:hover{
+    background-color: rgba(128, 128, 128, 100);
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+    border-radius: 1%;
+    box-shadow: 2px 2px 4px rgb(0 0 0 / 75%);;
+}
